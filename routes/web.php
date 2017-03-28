@@ -13,10 +13,15 @@
 
 Route::get('/','PostController@index');
 
+//post
 Route::get('/new-post','PostController@create');
-
 Route::post('/store-post','PostController@store');
+Route::get('/post/{id}','PostController@show');
 
+//comment
+Route::post('/post/{id}/comment','CommentController@store');
+
+//category
 Route::get('/new-category','CategoryController@create');
 
 Route::post('/store-category','CategoryController@store');

@@ -7,7 +7,7 @@
 
 @foreach($post as $row)
 <div class="blog-post">
-  <h2 class="blog-post-title">{{$row['title']}}</h2>
+  <a href="post/{{$row['id']}}"><h2 class="blog-post-title">{{$row['title']}}</h2></a>
   <p>{{$row['content']}}</p>
 </div>
 @endforeach

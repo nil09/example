@@ -58,9 +58,12 @@ class PostController extends Controller
      * @param  \App\post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(post $post)
+    public function show(Request $request,$id)
     {
-        //
+    //  dd($request);
+        //$this->validate(request(),[$id=>'required']);
+        $post=post::find($id);
+        return view('post',compact('post'));
     }
 
     /**
