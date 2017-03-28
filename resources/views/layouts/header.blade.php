@@ -2,9 +2,9 @@
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item" href="http://127.0.0.1/example/public/">Home</a>
-          <a class="blog-nav-item" href="new-post">Add Post</a>
-          <a class="blog-nav-item" href="new-category">New Category</a>
-          <a class="blog-nav-item" href="new-tag">New Tag</a>
+          <a class="blog-nav-item" href="{{asset('new-post')}}">Add Post</a>
+          <a class="blog-nav-item" href="{{asset('new-category')}}">New Category</a>
+          <a class="blog-nav-item" href="{{asset('new-tag')}}">New Tag</a>
           <a class="blog-nav-item" href="#">About</a>
         </nav>
       </div>
